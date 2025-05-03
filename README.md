@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-Blake Talton Portfolio
   <link rel="stylesheet" href="style.css">
-</head>
+</head> 
 <body>
   <header>
     <h1>Blake Talton</h1>
-    <p>GitHub Portfolio</p>
+    <p>Showing what I know and what I am learning..</p>
   </header>
   <section id="bio">
     <h2>About Me</h2>
@@ -17,12 +16,13 @@ Blake Talton Portfolio
     Married with 1 Daughter</p>
   </section>
   <section id="repos">
-    <h2>Repositories</h2>
+    <h2>Contact information</h2>
     <ul id="repo-list"></ul>
   </section>
   <footer>
-    <p>Contact: <a href="mailto:your.email@example.com">johnathantalton@icloud.com</a></p>
+    <p>Email: <a href="mailto:your.email@example.com">johnathantalton@icloud.com</a></p>
+    <p>YouTube: <a href="https://www.youtube.com/@BlakeTalton_YT">Blake Talton's Youtube</a>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/blake-talton-215308292/">https://www.linkedin.com/in/blake-talton-215308292/</a></p>
   </footer>
-  <script src="script.js"></script>
 </body>
 </html>
