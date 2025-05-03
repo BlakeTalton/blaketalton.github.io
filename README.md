@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+Blake Talton Portfolio
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Blake Talton</h1>
+    <p>GitHub Portfolio</p>
+  </header>
+  <section id="bio">
+    <h2>About Me</h2>
+    <p id="user-bio">31 Years Old,
+    Married with 1 Daughter</p>
+  </section>
+  <section id="repos">
+    <h2>Repositories</h2>
+    <ul id="repo-list"></ul>
+  </section>
+  <footer>
+    <p>Contact: <a href="mailto:your.email@example.com">johnathantalton@icloud.com</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
