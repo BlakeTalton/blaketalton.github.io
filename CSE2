@@ -1,0 +1,145 @@
+# 🛡️ Cloud Security Engineer — Career Roadmap
+
+> *Complete path from beginner to professional — 12 months, ~$900–$1,000 total investment*
+
+---
+
+## 🔷 What Is a Cloud Security Engineer?
+
+Protects cloud infrastructure, data, and applications from threats and vulnerabilities.
+
+**Day-to-Day Responsibilities:**
+- Identify & fix security vulnerabilities in cloud environments
+- Set up firewalls, access controls, and encryption
+- Monitor for suspicious activity and respond to incidents
+- Ensure compliance with HIPAA, SOC2, GDPR
+- Review code and architecture for security weaknesses
+- Automate security checks into DevSecOps pipelines
+
+---
+
+## 💰 Salary Range
+
+| Level | Range |
+|-------|-------|
+| 🟢 Entry Level | $85,000 – $110,000 |
+| 🔵 Mid Level | $120,000 – $160,000 |
+| 🟣 Senior Level | $170,000 – $220,000+ |
+
+---
+
+## 🗺️ Career Progression
+
+**SOC Analyst → Cloud Security Engineer → Security Architect → CISO**
+
+---
+
+## 🏆 Certifications Path (In Order)
+
+| # | Certification | Tag |
+|---|--------------|-----|
+| 1 | CompTIA Security+ | ✅ Start Here |
+| 2 | AWS Cloud Practitioner | 🔵 Foundational |
+| 3 | AWS Solutions Architect Associate | 🔵 Associate |
+| 4 | AWS Security Specialty | 🎯 Target |
+| 5 | AZ-500 / GCP Security Engineer | 🟣 Advanced |
+| 6 | CISSP | 🔴 Elite |
+
+---
+
+## 📅 12-Month Study Timeline
+
+### Months 1–2 — Tech Foundations
+- [ ] Networking basics — TCP/IP, DNS, firewalls, VPNs
+- [ ] Windows & Linux command line
+- [ ] Security mindset — CIA triad, encryption, threats
+
+**Resources:**
+- TryHackMe.com — Pre-Security learning path (free)
+- Professor Messer — YouTube (free)
+- Google IT Support Certificate — Coursera
+
+---
+
+### Months 3–4 — First Certification
+- [ ] Study for CompTIA Security+
+- [ ] Complete Jason Dion course on Udemy (~$15 on sale)
+- [ ] Pass the exam ✅
+
+**Resources:**
+- Udemy — Jason Dion (Security+)
+- Professor Messer practice tests
+- CompTIA CertMaster Labs
+
+---
+
+### Months 5–7 — Cloud Foundations
+- [ ] Create free AWS account and explore the console
+- [ ] Earn AWS Cloud Practitioner cert
+- [ ] Start AWS Solutions Architect Associate
+
+**Resources:**
+- Stephane Maarek on Udemy (best AWS courses)
+- AWS free tier account — hands-on practice
+- A Cloud Guru
+
+---
+
+### Months 8–10 — Cloud Security Specialty
+- [ ] Pursue AWS Security Specialty certification
+- [ ] Learn IAM, CloudTrail, GuardDuty, Security Hub
+- [ ] Build hands-on labs in your AWS free account
+
+**Resources:**
+- AWS Security Specialty course (Udemy)
+- AWS official documentation
+- CloudGoat (vulnerable-by-design AWS labs)
+
+---
+
+### Months 11–12 — Job Ready Push
+- [ ] Build portfolio — document home lab projects on GitHub
+- [ ] Optimize LinkedIn with certifications and projects
+- [ ] Apply to entry-level roles:
+  - Junior Cloud Security Engineer
+  - Cloud Security Analyst
+  - Associate SOC Analyst (stepping stone)
+- [ ] Network with cloud security professionals on LinkedIn
+
+---
+
+## 🔧 Key Skills to Build
+
+- AWS / Azure / GCP hands-on experience
+- Identity & Access Management (IAM)
+- Network security — VPNs, firewalls, zero-trust architecture
+- SIEM, vulnerability scanners, intrusion detection
+- Python & Bash scripting
+- Compliance frameworks (HIPAA, SOC2, GDPR)
+
+---
+
+## 💵 Budget Estimate
+
+| Item | Cost |
+|------|------|
+| TryHackMe | Free – $14/month |
+| Udemy Courses | ~$60 total (buy on sale) |
+| CompTIA Security+ Exam | ~$400 |
+| AWS Cloud Practitioner Exam | ~$100 |
+| AWS Solutions Architect Exam | ~$300 |
+| **Total** | **~$900 – $1,000** |
+
+---
+
+## ✅ Why This Career
+
+- Cybersecurity threats are increasing — demand grows yearly
+- Every company using cloud needs this skill
+- Talent shortage keeps salaries high
+- AI assists but cannot replace human judgment
+- Clear path: SOC Analyst → Engineer → Architect → CISO
+
+---
+
+> 💡 **Key Reminder:** Consistency beats intensity
