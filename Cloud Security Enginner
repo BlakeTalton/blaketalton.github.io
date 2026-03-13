@@ -1,0 +1,289 @@
+import { useState } from “react”;
+
+const data = {
+title: “Cloud Security Engineer”,
+subtitle: “Complete Career Roadmap — Beginner to Professional”,
+role: {
+description: “Protects cloud infrastructure, data, and applications from threats and vulnerabilities.”,
+duties: [
+“Identify & fix security vulnerabilities in cloud environments”,
+“Set up firewalls, access controls, and encryption”,
+“Monitor for suspicious activity and respond to incidents”,
+“Ensure compliance with HIPAA, SOC2, GDPR”,
+“Review code and architecture for security weaknesses”,
+“Automate security checks into DevSecOps pipelines”,
+],
+skills: [
+“AWS / Azure / GCP hands-on experience”,
+“Identity & Access Management (IAM)”,
+“Network security — VPNs, firewalls, zero-trust”,
+“SIEM, vulnerability scanners, intrusion detection”,
+“Python & Bash scripting”,
+“Compliance frameworks”,
+],
+},
+salaries: [
+{ level: “Entry”, range: “$85K – $110K”, color: “#4ade80” },
+{ level: “Mid”, range: “$120K – $160K”, color: “#22d3ee” },
+{ level: “Senior”, range: “$170K – $220K+”, color: “#a78bfa” },
+],
+certs: [
+{ name: “CompTIA Security+”, tag: “Start Here”, color: “#4ade80” },
+{ name: “AWS Cloud Practitioner”, tag: “Foundational”, color: “#22d3ee” },
+{ name: “AWS Solutions Architect”, tag: “Associate”, color: “#22d3ee” },
+{ name: “AWS Security Specialty”, tag: “Target”, color: “#f59e0b” },
+{ name: “AZ-500 / GCP Security”, tag: “Advanced”, color: “#a78bfa” },
+{ name: “CISSP”, tag: “Elite”, color: “#f43f5e” },
+],
+timeline: [
+{
+months: “Months 1–2”,
+title: “Tech Foundations”,
+color: “#4ade80”,
+items: [
+“Networking basics — TCP/IP, DNS, firewalls, VPNs”,
+“Windows & Linux command line”,
+“Security mindset — CIA triad, encryption, threats”,
+],
+resources: [“TryHackMe Pre-Security Path”, “Professor Messer (YouTube)”, “Google IT Support Cert (Coursera)”],
+},
+{
+months: “Months 3–4”,
+title: “First Certification”,
+color: “#22d3ee”,
+items: [
+“Study for CompTIA Security+”,
+“Jason Dion course on Udemy (~$15 on sale)”,
+“Pass the exam — your first major credential”,
+],
+resources: [“Udemy — Jason Dion”, “Professor Messer practice tests”, “CompTIA CertMaster Labs”],
+},
+{
+months: “Months 5–7”,
+title: “Cloud Foundations”,
+color: “#f59e0b”,
+items: [
+“Create free AWS account — explore the console”,
+“AWS Cloud Practitioner cert”,
+“AWS Solutions Architect Associate”,
+],
+resources: [“Stephane Maarek on Udemy”, “AWS free tier account”, “A Cloud Guru”],
+},
+{
+months: “Months 8–10”,
+title: “Cloud Security Specialty”,
+color: “#a78bfa”,
+items: [
+“AWS Security Specialty certification”,
+“Learn IAM, CloudTrail, GuardDuty, Security Hub”,
+“Build hands-on labs in your AWS account”,
+],
+resources: [“AWS Security Specialty course (Udemy)”, “AWS documentation”, “CloudGoat (practice labs)”],
+},
+{
+months: “Months 11–12”,
+title: “Job Ready Push”,
+color: “#f43f5e”,
+items: [
+“Build portfolio — document labs on GitHub”,
+“Optimize LinkedIn with certs & projects”,
+“Apply: Junior Cloud Security Engineer, Cloud Security Analyst, SOC Analyst”,
+“Network with professionals on LinkedIn”,
+],
+resources: [“GitHub portfolio”, “LinkedIn optimization”, “CTF challenges (HackTheBox)”],
+},
+],
+careerPath: [
+{ title: “SOC Analyst”, desc: “Entry point”, color: “#4ade80” },
+{ title: “Cloud Security Engineer”, desc: “Target role”, color: “#22d3ee” },
+{ title: “Security Architect”, desc: “Senior path”, color: “#a78bfa” },
+{ title: “CISO”, desc: “Executive”, color: “#f43f5e” },
+],
+budget: [
+{ item: “TryHackMe”, cost: “Free – $14/mo” },
+{ item: “Udemy Courses”, cost: “~$60 total” },
+{ item: “CompTIA Security+”, cost: “~$400” },
+{ item: “AWS Cloud Practitioner”, cost: “~$100” },
+{ item: “AWS Solutions Architect”, cost: “~$300” },
+{ item: “Total”, cost: “~$900–$1,000”, bold: true },
+],
+};
+
+export default function Roadmap() {
+const [activeMonth, setActiveMonth] = useState(null);
+
+return (
+<div style={{
+background: “#050a12”,
+minHeight: “100vh”,
+fontFamily: “‘Courier New’, monospace”,
+color: “#e2e8f0”,
+padding: “40px 20px”,
+}}>
+<style>{`@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@700;900&display=swap'); .orbitron { font-family: 'Orbitron', monospace; } .mono { font-family: 'Share Tech Mono', monospace; } .glow-green { text-shadow: 0 0 10px #4ade80, 0 0 20px #4ade8055; } .glow-cyan { text-shadow: 0 0 10px #22d3ee, 0 0 20px #22d3ee55; } .card { background: #0d1826; border: 1px solid #1e3a5f; border-radius: 8px; } .timeline-node:hover { transform: translateX(4px); transition: transform 0.2s; } .cert-badge:hover { transform: scale(1.05); transition: transform 0.2s; } .path-arrow { color: #334155; font-size: 20px; } ::-webkit-scrollbar { width: 6px; } ::-webkit-scrollbar-track { background: #050a12; } ::-webkit-scrollbar-thumb { background: #1e3a5f; border-radius: 3px; } .grid-bg { background-image: linear-gradient(#0d1826 1px, transparent 1px), linear-gradient(90deg, #0d1826 1px, transparent 1px); background-size: 40px 40px; }`}</style>
+
+```
+  <div style={{ maxWidth: 900, margin: "0 auto" }}>
+
+    {/* Header */}
+    <div className="grid-bg" style={{ padding: "40px 30px", borderRadius: 12, border: "1px solid #1e3a5f", marginBottom: 32, textAlign: "center", position: "relative", overflow: "hidden" }}>
+      <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 3, background: "linear-gradient(90deg, #4ade80, #22d3ee, #a78bfa, #f43f5e)" }} />
+      <div className="mono" style={{ color: "#22d3ee", fontSize: 12, letterSpacing: 4, marginBottom: 12 }}>CAREER ROADMAP v1.0</div>
+      <h1 className="orbitron glow-cyan" style={{ fontSize: "clamp(22px, 5vw, 42px)", margin: "0 0 8px", color: "#22d3ee" }}>
+        CLOUD SECURITY
+      </h1>
+      <h1 className="orbitron glow-green" style={{ fontSize: "clamp(22px, 5vw, 42px)", margin: "0 0 16px", color: "#4ade80" }}>
+        ENGINEER
+      </h1>
+      <p className="mono" style={{ color: "#64748b", fontSize: 13, maxWidth: 500, margin: "0 auto" }}>
+        {data.subtitle}
+      </p>
+    </div>
+
+    {/* Career Path */}
+    <div className="card" style={{ padding: "24px", marginBottom: 24 }}>
+      <div className="mono" style={{ color: "#64748b", fontSize: 11, letterSpacing: 3, marginBottom: 16 }}>CAREER PROGRESSION</div>
+      <div style={{ display: "flex", alignItems: "center", flexWrap: "wrap", gap: 8 }}>
+        {data.careerPath.map((step, i) => (
+          <div key={i} style={{ display: "flex", alignItems: "center", gap: 8 }}>
+            <div style={{ padding: "10px 18px", background: `${step.color}15`, border: `1px solid ${step.color}55`, borderRadius: 6, textAlign: "center" }}>
+              <div className="mono" style={{ color: step.color, fontSize: 13, fontWeight: "bold" }}>{step.title}</div>
+              <div style={{ color: "#475569", fontSize: 10, marginTop: 2 }}>{step.desc}</div>
+            </div>
+            {i < data.careerPath.length - 1 && (
+              <div style={{ color: "#334155", fontSize: 18 }}>→</div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* Salary + Role Row */}
+    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 24 }}>
+      {/* Salary */}
+      <div className="card" style={{ padding: 24 }}>
+        <div className="mono" style={{ color: "#64748b", fontSize: 11, letterSpacing: 3, marginBottom: 16 }}>SALARY RANGE</div>
+        {data.salaries.map((s, i) => (
+          <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12, padding: "10px 14px", background: `${s.color}10`, borderRadius: 6, border: `1px solid ${s.color}30` }}>
+            <span className="mono" style={{ color: "#94a3b8", fontSize: 12 }}>{s.level}</span>
+            <span className="mono" style={{ color: s.color, fontSize: 13, fontWeight: "bold" }}>{s.range}</span>
+          </div>
+        ))}
+      </div>
+
+      {/* Why Great */}
+      <div className="card" style={{ padding: 24 }}>
+        <div className="mono" style={{ color: "#64748b", fontSize: 11, letterSpacing: 3, marginBottom: 16 }}>WHY THIS CAREER</div>
+        {[
+          "Threats increasing — demand grows yearly",
+          "Every cloud company needs this skill",
+          "Talent shortage = high salaries",
+          "AI assists but can't replace judgment",
+          "Clear path to CISO / architect",
+        ].map((item, i) => (
+          <div key={i} style={{ display: "flex", gap: 8, marginBottom: 8, alignItems: "flex-start" }}>
+            <span style={{ color: "#4ade80", fontSize: 10, marginTop: 3 }}>▶</span>
+            <span className="mono" style={{ color: "#94a3b8", fontSize: 11, lineHeight: 1.5 }}>{item}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* Certifications */}
+    <div className="card" style={{ padding: 24, marginBottom: 24 }}>
+      <div className="mono" style={{ color: "#64748b", fontSize: 11, letterSpacing: 3, marginBottom: 16 }}>CERTIFICATIONS PATH</div>
+      <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
+        {data.certs.map((cert, i) => (
+          <div key={i} className="cert-badge" style={{ padding: "10px 16px", background: `${cert.color}12`, border: `1px solid ${cert.color}40`, borderRadius: 8, cursor: "default" }}>
+            <div className="mono" style={{ color: cert.color, fontSize: 12, fontWeight: "bold" }}>{cert.name}</div>
+            <div style={{ color: "#475569", fontSize: 10, marginTop: 3 }}>{cert.tag}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* Timeline */}
+    <div className="card" style={{ padding: 24, marginBottom: 24 }}>
+      <div className="mono" style={{ color: "#64748b", fontSize: 11, letterSpacing: 3, marginBottom: 20 }}>12-MONTH STUDY TIMELINE</div>
+      <div style={{ position: "relative" }}>
+        <div style={{ position: "absolute", left: 16, top: 0, bottom: 0, width: 2, background: "linear-gradient(180deg, #4ade80, #22d3ee, #f59e0b, #a78bfa, #f43f5e)" }} />
+        {data.timeline.map((phase, i) => (
+          <div
+            key={i}
+            className="timeline-node"
+            onClick={() => setActiveMonth(activeMonth === i ? null : i)}
+            style={{ marginLeft: 40, marginBottom: 16, cursor: "pointer", position: "relative" }}
+          >
+            <div style={{ position: "absolute", left: -32, top: 12, width: 14, height: 14, borderRadius: "50%", background: phase.color, boxShadow: `0 0 8px ${phase.color}` }} />
+            <div style={{ padding: "14px 18px", background: activeMonth === i ? `${phase.color}18` : "#0a1520", border: `1px solid ${activeMonth === i ? phase.color : "#1e3a5f"}`, borderRadius: 8, transition: "all 0.2s" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                <div>
+                  <span className="mono" style={{ color: phase.color, fontSize: 11, letterSpacing: 2 }}>{phase.months}</span>
+                  <div className="mono" style={{ color: "#e2e8f0", fontSize: 14, fontWeight: "bold", marginTop: 2 }}>{phase.title}</div>
+                </div>
+                <span style={{ color: "#334155", fontSize: 16 }}>{activeMonth === i ? "▲" : "▼"}</span>
+              </div>
+              {activeMonth === i && (
+                <div style={{ marginTop: 14, borderTop: `1px solid ${phase.color}30`, paddingTop: 14 }}>
+                  <div style={{ marginBottom: 12 }}>
+                    {phase.items.map((item, j) => (
+                      <div key={j} style={{ display: "flex", gap: 8, marginBottom: 6 }}>
+                        <span style={{ color: phase.color, fontSize: 10, marginTop: 3 }}>◆</span>
+                        <span className="mono" style={{ color: "#94a3b8", fontSize: 12 }}>{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="mono" style={{ color: "#475569", fontSize: 10, letterSpacing: 2, marginBottom: 6 }}>RESOURCES</div>
+                  {phase.resources.map((r, j) => (
+                    <div key={j} style={{ display: "flex", gap: 8, marginBottom: 4 }}>
+                      <span style={{ color: "#475569", fontSize: 10, marginTop: 3 }}>→</span>
+                      <span className="mono" style={{ color: "#64748b", fontSize: 11 }}>{r}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="mono" style={{ color: "#475569", fontSize: 11, marginLeft: 40, marginTop: 4 }}>
+        ↑ Click any phase to expand details
+      </div>
+    </div>
+
+    {/* Key Skills + Budget Row */}
+    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 24 }}>
+      <div className="card" style={{ padding: 24 }}>
+        <div className="mono" style={{ color: "#64748b", fontSize: 11, letterSpacing: 3, marginBottom: 16 }}>KEY SKILLS TO BUILD</div>
+        {data.role.skills.map((skill, i) => (
+          <div key={i} style={{ display: "flex", gap: 8, marginBottom: 8 }}>
+            <span style={{ color: "#22d3ee", fontSize: 10, marginTop: 3 }}>◆</span>
+            <span className="mono" style={{ color: "#94a3b8", fontSize: 11 }}>{skill}</span>
+          </div>
+        ))}
+      </div>
+
+      <div className="card" style={{ padding: 24 }}>
+        <div className="mono" style={{ color: "#64748b", fontSize: 11, letterSpacing: 3, marginBottom: 16 }}>BUDGET ESTIMATE</div>
+        {data.budget.map((b, i) => (
+          <div key={i} style={{ display: "flex", justifyContent: "space-between", marginBottom: 8, paddingBottom: 8, borderBottom: b.bold ? "1px solid #4ade8030" : "1px solid #1e3a5f" }}>
+            <span className="mono" style={{ color: b.bold ? "#4ade80" : "#64748b", fontSize: b.bold ? 13 : 11, fontWeight: b.bold ? "bold" : "normal" }}>{b.item}</span>
+            <span className="mono" style={{ color: b.bold ? "#4ade80" : "#94a3b8", fontSize: b.bold ? 13 : 11, fontWeight: b.bold ? "bold" : "normal" }}>{b.cost}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* Footer */}
+    <div style={{ textAlign: "center", padding: "20px", borderTop: "1px solid #1e3a5f" }}>
+      <div className="mono" style={{ color: "#334155", fontSize: 11 }}>
+        CONSISTENCY BEATS INTENSITY — 2-3 HRS DAILY · 12 MONTHS · NEW CAREER
+      </div>
+    </div>
+
+  </div>
+</div>
+```
+
+);
+}
